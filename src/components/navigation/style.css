@@ -26,6 +26,18 @@ hr {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  
+}
+
+img {
+  height: 20px;
+  aspect-ratio: 1 / 1;
+}
+
 .menu > li {
   list-style-type: none;
   text-transform: uppercase;
@@ -46,9 +58,8 @@ hr {
 
 .media-icons {
   width: 60%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 10px;
+  display: flex;
+  flex-direction: row;
   margin: 10px 0;
 }
 
@@ -56,6 +67,7 @@ hr {
   transition: 0.25s;
   cursor: pointer;
   opacity: 0.55;
+  padding: 0 7px;
 }
 
 .media-icons > img:hover {
