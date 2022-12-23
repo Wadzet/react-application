@@ -1,6 +1,6 @@
 .card {
   width: 100%;
-  height: fit-content;
+  height: 400px;
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 10px;
@@ -22,19 +22,19 @@
 
 .card-title {
   font-size: 36px;
-  margin: 5px 10px;
+  padding: 20px;
 }
 
 .card-description {
-  color: rgb(132, 132, 132);
-  margin: 10px 10px;
+  color: rgb(160, 158, 158);
+  margin: 10px 20px;
   font-size: 14px;
 }
 
 .card-date-section {
-  color: rgb(132, 132, 132);
-  margin: 10px 10px;
-  font-size: 14px;
+  color: rgb(160, 158, 158);
+  margin: 10px 20px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 

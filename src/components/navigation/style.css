@@ -1,9 +1,10 @@
 nav {
-  width: 30%;
+  width: 20%;
   height: 100vh;
-  padding: 30px;
+  padding: 40px;
   color: #aaa;
   box-sizing: border-box;
+  background-color: white;
 }
 .menu-title {
   font-size: 36px;

@@ -1,3 +1,8 @@
 .App {
   display: flex;
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
