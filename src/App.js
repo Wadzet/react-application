@@ -1,25 +1,27 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import logo from './logo.svg';
 import './App.css';
-import Navigation from './components/navigation';
-import Content from './components/content';
-import PageNotFound from './components/pnf';
-import About from './components/about';
+import Header from './Components/Header/header';
+import Footer from './Components/Footer/footer';
+import Cards from './Components/Cards/cards';
+import BigCard from './Components/BigCards/bigcard';
+import Navigation from './Components/Header/Navigation/navigation';
+import Carousel from './Components/Carousel/carousel';
 
-function App () {
+function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Content type={'all'}/>} >
-            <Route path='/card/:cardId' element={<Content />} />
-          </Route>
-          <Route path='/about' element={<About />} />
+    <div className="App">
 
-          <Route path='*' element={<PageNotFound />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+
+    <Header/>
+    <Navigation/>
+    <Carousel/>
+    <Cards/>
+    <BigCard/>
+    <Footer/> 
+    
+      
+      
+    </div>
   );
 }
 
