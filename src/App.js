@@ -1,26 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
-import Header from './Components/Header/header';
-import Footer from './Components/Footer/footer';
-import Cards from './Components/Cards/cards';
-import BigCard from './Components/BigCards/bigcard';
-import Navigation from './Components/Header/Navigation/navigation';
-import Carousel from './Components/Carousel/carousel';
+import Widget from './widget';
 
 function App() {
+  const [selectedCity, setSelectedCity] = useState();
+  const selectCity = (event) => {
+    const value = event.target.value;
+    setSelectedCity(value);
+  };
+
   return (
     <div className="App">
-
-
-    <Header/>
-    <Navigation/>
-    <Carousel/>
-    <Cards/>
-    <BigCard/>
-    <Footer/> 
-    
-      
-      
+      <div className="input-container">
+        <input placeholder="Enter city" onBlur={selectCity}/>
+      </div>
+      <Widget city={selectedCity} />
     </div>
   );
 }
