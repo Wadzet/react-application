@@ -1,21 +1,35 @@
-import React, { useState } from "react";
 import './App.css';
-import Widget from './widget';
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import AboutCompany from './components/aboutcompany';
+import Count from './components/countup';
+import Cards from './components/cards'
+import ContactUs from './components/contactus';
+import Subscription from './components/subscription';
+import Player from './components/player';
+import SimpleSliderA from './components/sliders/homeslider'
+import Testimonials from './components/sliders/testimonials';
+import MultiSliderA from './components/sliders/projects';
+import Services from './components/sliders/services';
 
 function App() {
-  const [selectedCity, setSelectedCity] = useState();
-  const selectCity = (event) => {
-    const value = event.target.value;
-    setSelectedCity(value);
-  };
-
   return (
-    <div className="App">
-      <div className="input-container">
-        <input placeholder="Enter city" onBlur={selectCity}/>
-      </div>
-      <Widget city={selectedCity} />
+      <div className="App">
+      <Navbar />
+      <div className="purple-background"></div>
+      <SimpleSliderA />
+      <AboutCompany />
+      <Count />
+      <MultiSliderA />
+      <Cards />
+      <Testimonials />
+      <Services />
+      <Subscription />
+      <Player/>
+      <ContactUs />
+      <Footer />
     </div>
+    
   );
 }
 
